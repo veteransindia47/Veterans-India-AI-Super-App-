@@ -4,43 +4,211 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterans India Super AI Web App</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://www.veteransindia.com/assets/images/favicon.jpg" rel="shortcut icon" type="image/jpg">
-    
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
   <header>
     <img src="https://www.veteransindia.com/assets/images/favicon.jpg" alt="Veterans India Logo">
-    
+    <div class="slogan">हमारी पहचान – एक अभियान, सम्मान और स्वाभिमान</div>
     <nav>
       <ul id="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">WingsTeam</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Wings</a></li>
-        <li><a href="#">Motivational Speakers</a></li>
-        <li><a href="#">Activities</a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">MoU with Colleges</a></li>
+        <li><button class="quick-btn">Notifications</button></li>
+        <li><button class="quick-btn"> Hindi/English</button></li>
+        <li><button class="quick-btn"> Profile</button></li>
       </ul>
     </nav>
-
-    <a href="#" class="cta-btn">Get Started</a>
     <span class="menu-toggle" onclick="toggleMenu()">☰</span>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div>
-      <h1>हमारी पहचान एक अभियान, सम्मान और स्वाभिमान</h1>
-      <button>Learn More</button>
+      <h1>Nation First – Together for Viksit Bharat @2047</h1>
+      <div class="cta-buttons">
+        <button class="member">Join as Member</button>
+        <button class="vprf">Register for VPRF</button>
+        <button class="seva">Explore Seva Kendra</button>
+      </div>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- Impact Dashboard -->
+  <section class="impact">
+    <div class="metric"><h3>38,00,000+</h3><p>Members Onboarded</p></div>
+    <div class="metric"><h3>6,500+</h3><p>HEIs Registered</p></div>
+    <div class="metric"><h3>1,92,000+</h3><p>Panchayats Covered</p></div>
+    <div class="metric"><h3>180+</h3><p>CSR Partners</p></div>
+  </section>
+
+  <!-- Core Modules -->
+
+     <section class="modules">
+    <h2 class="section-title">Quick Access Dashboard</h2>
+    <div class="modules-grid">
+      <div class="module-card" onclick="navigateTo('seva-kendra.html')">
+        <div class="module-icon">🛠</div>
+        <div class="module-name">Seva Kendra</div>
+        <div class="module-tagline">Volunteer & Community Services</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('family-connect.html')">
+        <div class="module-icon">👨‍👩‍👧‍👦</div>
+        <div class="module-name">Family Connect</div>
+        <div class="module-tagline">Stay Connected with Families</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('govt-schemes.html')">
+        <div class="module-icon">📜</div>
+        <div class="module-name">Govt Schemes</div>
+        <div class="module-tagline">Access Government Programs</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('membership.html')">
+        <div class="module-icon">🪪</div>
+        <div class="module-name">Membership</div>
+        <div class="module-tagline">Official ID & Records</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('vprf.html')">
+        <div class="module-icon">🇮🇳</div>
+        <div class="module-name">VPRF</div>
+        <div class="module-tagline">Veterans Policy & Records</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('vicc.html')">
+        <div class="module-icon">🎖</div>
+        <div class="module-name">VICC</div>
+        <div class="module-tagline">Veterans International Coordination</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('rural-sports.html')">
+        <div class="module-icon">⚽</div>
+        <div class="module-name">Rural Sports</div>
+        <div class="module-tagline">Community Sports Programs</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('csr-engine.html')">
+        <div class="module-icon">💰</div>
+        <div class="module-name">CSR Engine</div>
+        <div class="module-tagline">Corporate Social Responsibility</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('donations.html')">
+        <div class="module-icon">🔗</div>
+        <div class="module-name">Donations + Blockchain</div>
+        <div class="module-tagline">Secure Contributions</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('media-hub.html')">
+        <div class="module-icon">🎥</div>
+        <div class="module-name">Media Hub</div>
+        <div class="module-tagline">News & Updates</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('sdg-dashboard.html')">
+        <div class="module-icon">🌍</div>
+        <div class="module-name">SDG Dashboard</div>
+        <div class="module-tagline">Sustainable Development Goals</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('admin-console.html')">
+        <div class="module-icon">🖥</div>
+        <div class="module-name">Admin Console</div>
+        <div class="module-tagline">Manage Operations</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('qa-testing.html')">
+        <div class="module-icon">✅</div>
+        <div class="module-name">QA / Testing</div>
+        <div class="module-tagline">Quality Assurance</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('member-to-member.html')">
+        <div class="module-icon">🤝</div>
+        <div class="module-name">Member-to-Member</div>
+        <div class="module-tagline">Connect & Collaborate</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('matchmaking.html')">
+        <div class="module-icon">💍</div>
+        <div class="module-name">Matchmaking</div>
+        <div class="module-tagline">Community Networking</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('hei-hub.html')">
+        <div class="module-icon">🎓</div>
+        <div class="module-name">HEI Hub</div>
+        <div class="module-tagline">Higher Education Institutions</div>
+      </div>
+      <div class="module-card" onclick="navigateTo('backend-infra.html')">
+        <div class="module-icon">⚙</div>
+        <div class="module-name">Backend & Infra</div>
+        <div class="module-tagline">System & Infrastructure</div>
+      </div>
+    </div>
+  </section>
+    
+
+  <!-- Wing Modules Carousel -->
+<section class="modules">
+  <h2 class="section-title">Wing Modules</h2>
+  <div style="position:relative;">
+    <!-- Left Arrow -->
+    <button class="carousel-arrow left" onclick="scrollCarousel(-300)">&#10094;</button>
+    
+    <!-- Carousel Container -->
+    <div class="carousel-container" id="wing-carousel">
+      <div class="carousel-item">🎭 Cultural</div>
+      <div class="carousel-item">🗳 Social Awareness</div>
+      <div class="carousel-item">🕊 Martyrs’ Families</div>
+      <div class="carousel-item">⚽ Sports</div>
+      <div class="carousel-item">👩‍🦰 Nari Sena</div>
+      <div class="carousel-item">💼 Employment</div>
+      <div class="carousel-item">🧠 Intellectual</div>
+      <div class="carousel-item">⚖ Legal</div>
+      <div class="carousel-item">🚒 Disaster Mgmt</div>
+      <div class="carousel-item">🌱 Environment</div>
+      <div class="carousel-item">🌍 NRI/OCI</div>
+      <div class="carousel-item">👵 Seniors/Children/Disability</div>
+      <div class="carousel-item">🏥 Health</div>
+      <div class="carousel-item">🎖 Ex-Servicemen</div>
+      <div class="carousel-item">🌾 Rural Dev</div>
+      <div class="carousel-item">👦 Youth</div>
+      <div class="carousel-item">📚 Education</div>
+      <div class="carousel-item">🚫 Anti-Corruption</div>
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="carousel-arrow right" onclick="scrollCarousel(300)">&#10095;</button>
+  </div>
+</section>
+
+  <!-- Live Ticker -->
+  <div class="ticker">
+    <span>Patna District honored as Patriotic Champion • Nari Sena Bihar trained 12,000 women • Rural Sports Meet launched in UP…</span>
+  </div>
+
+  <!-- Highlight Cards -->
+  <section class="highlights">
+    <div class="highlight-card"><h3>Latest National Event</h3><p>Patriotic activities across India</p></div>
+    <div class="highlight-card"><h3>State Achievement</h3><p>Top performers in each state</p></div>
+    <div class="highlight-card"><h3>HEI Spotlight</h3><p>Innovative Higher Education Initiatives</p></div>
+  </section>
+
+  <!-- Recognition & Awards -->
+  <section class="recognition">
+    <h2>Pride of Nation Awards 2025</h2>
+    <button>Register Institution</button>
+    <button>Nominate Individual</button>
+    <button>View Past Winners</button>
+  </section>
+
+  <!-- Community Engagement -->
+  <section class="community">
+    <h2>Community Engagement</h2>
+    <p>👪 Patriotic Family Event – Join Monthly Digital Parivar Meet</p>
+    <p>🌟 Volunteer Spotlight – Top 10 VPRF of the Month</p>
+    <p>🧑‍🏫 Mentor–Student Exchange (Sharavan Concept) – Service Credit System</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Quick Links: <a href="#">About</a> • <a href="#">Contact</a> • <a href="#">Donate</a> • <a href="#">Terms</a> • <a href="#">Privacy</a></p>
+    <p>Contact: 📞 99115 11967 | ✉ info@veteransindia.com | 🌐 www.veteransindia.com</p>
+    <p>Social Media: <a href="#">Facebook</a> • <a href="#">Twitter</a> • <a href="#">YouTube</a> • <a href="#">LinkedIn</a></p>
+    <p>🇮🇳 Jai Hind! Together we make Bharat Vishwaguru.</p>
+  </footer>
+
+  
+    <script src="scripts.js"></script>
+ 
 </body>
 </html>
