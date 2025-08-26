@@ -30,6 +30,21 @@
     .module-name { font-weight:bold; margin-bottom:5px; color:#002147; }
     .module-tagline { font-size:0.85rem; color:#555; }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
     /* Ticker Section */
     .ticker { background:#002147; color:#fff; padding:10px 0; overflow:hidden; white-space:nowrap; }
     .ticker span { display:inline-block; padding-right:50px; animation: ticker 20s linear infinite; }
