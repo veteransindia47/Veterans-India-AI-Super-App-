@@ -118,3 +118,481 @@
       .impact{flex-direction:column; align-items:center;}
       .carousel-container{flex-wrap:wrap; overflow-x:auto;}
     }
+
+
+/* Section Spacing */
+header, 
+.hero, 
+.modules, 
+.ticker, 
+.highlights, 
+.impact, 
+.recognition, 
+.community, 
+.carousel-container, 
+footer {
+  margin-bottom: 40px; /* har section ke beech chhota sa gap */
+}
+
+footer {
+  margin-bottom: 0; /* footer ke neeche extra space na ho */
+}
+
+
+/* ✅ Center Alignment for Smaller Screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  header img {
+    margin-bottom: 10px;
+  }
+
+  header .slogan {
+    flex: unset;
+    margin: 10px 0;
+  }
+
+  nav ul {
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 100px 20px 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Modules Section */
+  .modules {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .modules-grid {
+    justify-content: center;
+  }
+
+  /* Highlights */
+  .highlights {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Impact Dashboard */
+  .impact {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Recognition */
+  .recognition {
+    text-align: center;
+  }
+
+  /* Community */
+  .community {
+    text-align: center;
+  }
+
+  /* Carousel */
+  .carousel-container {
+    justify-content: center;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+}
+
+
+/* ✅ Perfect Mobile Centering (like directcollegeadmit) */
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  header img {
+    margin-bottom: 10px;
+  }
+  header .slogan {
+    flex: unset;
+    margin: 5px 0 15px 0;
+  }
+  nav ul {
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px 40px;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero .cta-buttons {
+    justify-content: center;
+  }
+
+  /* Modules */
+  .modules {
+    padding: 30px 15px;
+    text-align: center;
+  }
+  .modules-grid {
+    justify-content: center;
+  }
+
+  /* Highlights */
+  .highlights {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Impact */
+  .impact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Recognition */
+  .recognition {
+    text-align: center;
+  }
+  .recognition button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Community */
+  .community {
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  /* Carousel */
+  .carousel-container {
+    justify-content: center;
+    text-align: center;
+  }
+  .carousel-item {
+    margin: auto;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+}
+
+
+/* ✅ Ultra Responsive Centering (114px bhi support karega) */
+@media (max-width: 500px) {
+
+  /* Global Fix */
+  body, section, div, header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Header */
+  header {
+    padding: 10px;
+  }
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 10px 30px;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+  .hero .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .hero .cta-buttons button {
+    width: 90%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  /* Modules */
+  .modules {
+    padding: 20px 10px;
+  }
+  .modules-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
+  }
+  .module-card {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  /* Highlights */
+  .highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Impact */
+  .impact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Recognition */
+  .recognition button {
+    width: 90%;
+    max-width: 250px;
+    margin: 8px auto;
+    display: block;
+  }
+
+  /* Carousel */
+  .carousel-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+  }
+  .carousel-item {
+    min-width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+
+/* ✅ Perfect Center Fix for All Screens (even 114px) */
+@media (max-width: 500px) {
+
+  /* Global Reset */
+  body, section, div, header, footer {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Header */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
+  nav ul {
+    position: static;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  nav ul li {
+    width: 100%;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 10px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  .hero .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero .cta-buttons button {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Modules */
+  .modules {
+    padding: 20px 10px;
+  }
+  .modules-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+  }
+  .module-card {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  /* Highlights */
+  .highlights {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Impact */
+  .impact {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Recognition */
+  .recognition button {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Carousel */
+  .carousel-container {
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .carousel-item {
+    margin: 0 auto;
+    min-width: 80%;
+  }
+
+  /* Footer */
+  footer {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+}
+
+
+/* ✅ Impact Dashboard Fix */
+@media (max-width: 500px) {
+  .impact {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .impact .metric {
+    width: 90%;
+    max-width: 250px;
+    margin: 10px auto;
+    word-wrap: break-word;
+  }
+
+  .impact .metric h3 {
+    font-size: clamp(1.2rem, 5vw, 1.8rem); /* auto adjust size */
+    word-break: break-word;
+  }
+
+  .impact .metric p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+}
+
+
+/* ✅ Section Gap Fix (Smallest screens also) */
+section, 
+header, 
+.hero, 
+.modules, 
+.ticker, 
+.highlights, 
+.impact, 
+.recognition, 
+.community, 
+.carousel-container, 
+footer {
+  margin-bottom: 25px;   /* consistent gap */
+}
+
+/* Footer ke liye extra margin remove */
+footer {
+  margin-bottom: 0;
+}
+
+/* Small screens ke liye gap aur optimize */
+@media (max-width: 500px) {
+  section, 
+  header, 
+  .hero, 
+  .modules, 
+  .ticker, 
+  .highlights, 
+  .impact, 
+  .recognition, 
+  .community, 
+  .carousel-container, 
+  footer {
+    margin-bottom: 20px;  /* thoda chhota but safe gap */
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
